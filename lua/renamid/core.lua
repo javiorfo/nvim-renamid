@@ -1,4 +1,5 @@
 local popcorn = require 'popcorn'
+local borders = require 'popcorn.borders'
 local SETTINGS = require 'renamid'.SETTINGS
 local M = {}
 
@@ -25,7 +26,7 @@ function M.rename()
         local opts2 = {
             width = SETTINGS.width,
             height = 3,
-            border = SETTINGS.border,
+            border = borders[SETTINGS.border],
             title = SETTINGS.title,
             content = { { word } },
             callback = function()
