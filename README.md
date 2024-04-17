@@ -1,2 +1,2 @@
 # nvim-renamid
-Lsp rename in a centered popup
+*Neovim plugin for LSP rename function in a centered popup*
