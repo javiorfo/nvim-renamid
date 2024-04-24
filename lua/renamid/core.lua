@@ -27,11 +27,14 @@ function M.rename()
             width = SETTINGS.width,
             height = 3,
             border = borders[SETTINGS.border],
-            title = SETTINGS.title,
+            title = SETTINGS.titl,
             content = { { word } },
             callback = function()
                 rename_in_buffer(bufnr, vim.fn.getline(1))
                 vim.cmd [[stopinsert]]
+                return function()
+                    vim.cmd[[quit]]
+                end
             end,
             do_after = function()
                 vim.api.nvim_buf_set_keymap(0, 'i', '<CR>', '<cmd>lua require("popcorn").execute_callback()<cr>',
