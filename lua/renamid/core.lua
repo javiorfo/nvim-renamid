@@ -27,7 +27,7 @@ function M.rename()
             width = SETTINGS.width,
             height = 3,
             border = borders[SETTINGS.border],
-            title = SETTINGS.titl,
+            title = SETTINGS.title,
             content = { { word } },
             callback = function()
                 rename_in_buffer(bufnr, vim.fn.getline(1))
