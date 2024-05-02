@@ -23,8 +23,11 @@ function M.rename()
         local bufnr = vim.api.nvim_get_current_buf()
         local word = vim.fn.expand('<cword>')
 
+        local word_width = #word + 5
+        local width = word_width > SETTINGS.width and word_width or SETTINGS.width
+
         local opts2 = {
-            width = SETTINGS.width,
+            width = width,
             height = 3,
             border = borders[SETTINGS.border],
             title = SETTINGS.title,
