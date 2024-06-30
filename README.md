@@ -10,15 +10,15 @@
 `Packer`
 ```lua
 use {
-    'javiorfo/nvim-renamid',
-    requires = { 'javiorfo/nvim-popcorn' }
+    'chaosystema/nvim-renamid',
+    requires = { 'chaosystema/nvim-popcorn' }
 }
 ```
 `Lazy`
 ```lua
 { 
-    'javiorfo/nvim-renamid',
-    dependencies = { 'javiorfo/nvim-popcorn' }
+    'chaosystema/nvim-renamid',
+    dependencies = { 'chaosystema/nvim-popcorn' }
     lazy = true,
     ft = { "c", "java", "rust" }, -- LSP languages
     opts = {
@@ -71,12 +71,12 @@ require'renamid'.setup {
 ## Screenshots
 ### Simple use
 
-<img src="https://github.com/javiorfo/img/blob/master/nvim-renamid/renamid.gif?raw=true" alt="renamid"/>
+<img src="https://github.com/chaosystema/img/blob/master/nvim-renamid/renamid.gif?raw=true" alt="renamid"/>
 
-**NOTE:** The colorscheme **nox** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in this image.
+**NOTE:** The colorscheme **nox** from [nvim-nyctophilia](https://github.com/chaosystema/nvim-nyctophilia) is used in this image.
 
 ---
 
 ### Donate
-- **Bitcoin** [(QR)](https://raw.githubusercontent.com/javiorfo/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
+- **Bitcoin** [(QR)](https://raw.githubusercontent.com/chaosystema/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
