@@ -32,12 +32,12 @@ function M.rename()
             border = borders[SETTINGS.border],
             title = SETTINGS.titl,
             content = { { word } },
-            on_close = function()
+--[[             on_close = function()
                 local nvim_tree = vim.fn.bufnr("NvimTree_1")
                 if vim.fn.bufexists(nvim_tree) and vim.api.nvim_buf_is_valid(nvim_tree) then
                     vim.api.nvim_input("<CR>")
                 end
-            end,
+            end, ]]
             callback = function()
                 rename_in_buffer(bufnr, vim.fn.getline(1))
                 vim.cmd [[stopinsert]]
